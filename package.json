@@ -1,0 +1,20 @@
+{
+  "name": "from_the_other_side",
+  "version": "1.0.0",
+  "description": "A platform for sharing ghostly encounters",
+  "homepage": "https://github.com/rubenaguilardev/from_the_other_side#readme",
+  "bugs": {
+    "url": "https://github.com/rubenaguilardev/from_the_other_side/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubenaguilardev/from_the_other_side.git"
+  },
+  "license": "ISC",
+  "author": "ben",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
