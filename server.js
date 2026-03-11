@@ -5,12 +5,8 @@ const PORT = 8000
 
 const dirname = import.meta.dirname
 
-const server = http.createServer((req, res) => {
-
-  serveStatic(dirname)
-  res.setHeader('Content-Type', 'text/html')
-  res.statusCode = 200
-  res.end('<html><h1>The server is working</h1></html>')
+const server = http.createServer( async (req, res) => {
+  await serveStatic(req, res, dirname)
 })
 
 server.listen(PORT, () => console.log(`server running on port ${PORT}`))
